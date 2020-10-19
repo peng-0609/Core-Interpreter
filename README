@@ -1,0 +1,85 @@
+====================
+| FILE DESCRIPTION |
+====================
+
+=====FILE 1~16: Non-Terminal Classes=====
+1. AssignStmt.java
+Class of NT symbol <assign>.
+2. Comp.java
+Class of NT symbol <comp>.
+3. Cond.java
+Class of NT symbol <cond>.
+4. Decl.java
+Class of NT symbol <decl>.
+5. DeclSeq.java
+Class of NT symbol <decl seq>.
+6. Exp.java
+Class of NT symbol <exp>.
+7. IdList.java
+Class of NT symbol <id list>.
+8. IfStmt.java
+Class of NT symbol <if>.
+9. InStmt.java
+Class of NT symbol <in>.
+10. LoopStmt.java
+Class of NT symbol <loop>.
+11. Op.java
+Class of NT symbol <op>.
+12. OutStmt.java
+Class of NT symbol <out>.
+13. Prog.java
+Class of NT symbol <prog>.
+14. Stmt.java
+Class of NT symbol <stmt>.
+15. StmtSeq.java
+Class of NT symbol <stmt seq>.
+16. Trm.java
+Class of NT symbol <trm>.
+
+=====FILE 17~23: Core Interpreter=====
+17. Executor.java
+Class file of Executor.
+18. Interpreter.java
+Class file of Interpreter.
+19. Parser.java
+Class file of Parser.
+20. Printer.java
+Class file of Printer.
+21. Tokenizer.java
+The interface of Tokenizer.
+22. Tokenizer1.java
+Class file of Tokenizer1.
+23. TokenKind.java
+Enums of all possible kinds of the token.
+
+=====FILE 24~25: Exception Classes=====
+24. ExecutorException.java
+Exception class of Executor(Runtime error)
+25. ParseException.java
+Exception class of Parser(Syntax error)
+
+=====FILE 26~27: Test Files=====
+26. testProg1
+Test program.
+27. testInput1
+Input file.
+
+=====FILE 28~29=====
+28. makefile
+Makefile of the project.
+29. Runfile
+Runfile
+Containing a single line of text that shows how to run the program from the command line,
+but without the required argument stating the path and name of the input file.
+
+=====FILE 30~31: Documents=====
+30. README
+31. Documentation
+
+
+===================================
+| command line to run the program |
+===================================
+
+make
+java Interpreter testProg1 testInput1 print

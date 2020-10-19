@@ -1,0 +1,19 @@
+=====Description of the overall design=====
+With the previous project(Tokenizer), I designed the core interpreter using recursive descent parser and objective-oriented classes.
+I wrote different classes for all non-terminal symbols, and each of them contained a constructor, parse() method, print() method and exec() method.
+In the interpreter, I used static map and linked list to restore all input data, declared variables and their values.
+I also wrote two exception classes to trace any possible syntax error or runtime error.
+
+=====User Manual=====
+Write a program with core language from http://web.cse.ohio-state.edu/~heym.1/3341/BNF%20for%20Core.pdf 
+and save the program as an ASCII text file. Create an input file with all required input data.
+If there's no input, there should still be an empty input file.
+Then run the program following the instruction in README.
+
+=====Testing & Bug=====
+I used test cases from http://web.cse.ohio-state.edu/~heym.1/3341/part3MoreTests/
+And currently there is no bug.
+
+Problem with makefile: I used makefile to compile the project for the first time 
+and I was not sure if there was any command in the makefile that can directly produce an executable file,
+so I still used java Interpreter as the command line to run the project.
